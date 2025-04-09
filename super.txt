@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bookstore</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Top Navigation */
+        .top {
+            background-color: #e3f2fd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .top a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #0077b6;
+        }
+
+        /* Layout for sidebar and main content */
+        .container {
+            display: flex;
+            height: 90vh;
+        }
+
+        .left {
+            width: 20%;
+            background-color: #f1f8e9;
+            padding: 20px;
+        }
+
+        .left a {
+            display: block;
+            margin-bottom: 10px;
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        .right {
+            width: 80%;
+            border-left: 1px solid #ccc;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Frame Replacement -->
+    <div class="top">
+        <h2>📘 Lakireddy Balireddy College of Engineering</h2>
+        <a href="home.html" target="mainFrame">Home</a>
+        <a href="login.html" target="mainFrame">Login</a>
+        <a href="register.html" target="mainFrame">Register</a>
+        <a href="catalogue.html" target="mainFrame">Catalogue</a>
+        <a href="cart.html" target="mainFrame">Cart</a>
+    </div>
+
+    <!-- Sidebar + Main Content Area -->
+    <div class="container">
+        <div class="left">
+            <h3>Departments</h3>
+            <a href="catalogue-cse.html" target="mainFrame">CSE</a>
+            <a href="catalogue-ece.html" target="mainFrame">ECE</a>
+            <a href="catalogue-mech.html" target="mainFrame">Mechanical</a>
+            <a href="catalogue-civil.html" target="mainFrame">Civil</a>
+        </div>
+        <div class="right">
+            <!-- Right frame shows content -->
+            <iframe src="home.html" name="mainFrame"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+📄 home.html
+
+
+<h2>Welcome to the Online Bookstore</h2>
+<p>Explore books from various departments. Use the menu to navigate.</p>
+
+
+
+
+
+📄 catalogue-cse.html
+
+
+<h2>CSE Books</h2>
+<ul>
+    <li>Data Structures - Narasimha Karumanchi</li>
+    <li>Let Us C - Yashwant Kanetkar</li>
+</ul>
+
